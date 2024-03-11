@@ -23,7 +23,7 @@ session = onnxruntime.InferenceSession(
 )
 
 start = time.time()
-wav_onnx, new_sr = run(session, wav, sr, batch_process_chunks=True)
+wav_onnx, new_sr = run(session, wav, sr, batch_process_chunks=False)
 print(f'Ran in {time.time() - start}s')
 
 scipy.io.wavfile.write('denoiser_output.wav', new_sr, wav_onnx)
