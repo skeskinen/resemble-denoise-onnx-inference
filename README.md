@@ -15,7 +15,7 @@ This project has been tested on Python 3.11. You will also need to install the n
 
 ```pip install -r requirements.txt```
 
-Alternativel install your own ONNX Runtime for running on the GPU.
+Alternatively install your own ONNX Runtime for running on the GPU.
 
 Usage
 ===
